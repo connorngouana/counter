@@ -25,6 +25,11 @@ class CounterTest {
     {
         assertEquals(-1, myCount.decrement());
     }
+    @Test
+    void testReset()
+    {
+        assertEquals(0, myCount.reset());
+    }
 
     @Test
     void testConstructorFail()
